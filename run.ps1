@@ -1,6 +1,6 @@
 $ConfigFile = "aria2.conf"
 $TrackersFile = "trackers_all.txt"
-$DownloadLink = "https://ngosang.github.io/trackerslist/trackers_all.txt"
+$DownloadLink = "https://ngosang.github.io/trackerslist/"+$TrackersFile
 
 Invoke-WebRequest -Uri $DownloadLink -OutFile $env:TEMP\$TrackersFile
 
